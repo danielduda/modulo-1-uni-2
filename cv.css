@@ -124,7 +124,7 @@ h2{
 }
 
 .cajas input{
-    padding: 7px;
+    padding: 5px;
     background-color:bisque;
     border-radius: 8px;
     box-shadow: 0px 0px 8px grey; /*sombrear todos los bordes*/
