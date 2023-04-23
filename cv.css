@@ -1,0 +1,118 @@
+
+.boton{
+color:white;
+background-color: red;
+text-decoration: none;
+padding: 5px; /*distancia arriba abajo (primer dato) y derecha izquierda (segundo dato)*/
+border-radius:10px; 
+}
+
+.boton:hover{
+    background-color: green;
+}
+
+
+body{
+    background-color: grey;
+    margin: 0;
+}
+
+h1{
+    background-color: rgb(4, 31, 88);
+    color: whitesmoke;/*color tipografía*/
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.container{
+
+    background-color: bisque;
+    width: 1000px; /*propiedades tamaño*/
+    height:300px; /*propiedades tamaño*/
+    position:relative;
+    top:10px; /*propiedades desplazamiento*/
+    
+    
+}
+
+.container img{
+    border:2px solid black;
+     width: 200px; /*trabajar con porcentajes*/
+     border-radius: 20px;
+     box-shadow: 0px 0px 12px yellow;
+     position: absolute;
+     right:0;
+     bottom: 0;
+     
+ }
+
+.lista{
+    color:green;
+    position: absolute;
+    top:20px;
+    left: 80px;
+    text-align:justify;
+}
+
+
+ 
+p{
+    color:whitesmoke;
+    font-size:18px;
+    text-align:justify;
+}
+
+h2{
+    color: black;
+    font-style: italic;
+
+}
+
+
+.destacados{ 
+    color: yellow;
+    font-size: 18px;
+    font-weight:bold;
+    text-align:justify;
+}
+
+
+
+.estiloform{ /*para dar estilo al formulario*/
+    background-color: black;
+        font-size:17px;
+        width:50%;
+        padding:20px;
+        border: 2px solid bisque;
+        margin: 0px auto;
+        box-shadow: 0px 0px 12px yellow; /*sombrear todos los bordes*/
+        border-radius: 8px;
+        text-align:justify;
+        
+        
+    
+}
+.cajas label{
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:medium;
+}
+
+.cajas input{
+    padding: 7px;
+    background-color:bisque;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px grey; /*sombrear todos los bordes*/
+    color:rgb(95, 62, 62);
+    font-family:'Times New Roman', Times, serif;
+    font-size:14px;
+
+
+}
+.cajas select{
+    background-color:bisque;
+    color:red;
+
+}

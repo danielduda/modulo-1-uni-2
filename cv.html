@@ -7,15 +7,21 @@
             <meta name="description" content="esta es mi primer página web"/>
             <meta name="author" content="daniel duda"/>
             <meta name="keywords" content="curriculum vitae, cv, empleo, página web"/>
-
+            <link rel="stylesheet" href="cv.css">
 
 </head>
 
 
 <body>
-    <h1>Daniel Duda</h1>
-<img src="images/2.jpg" alt="imagen de cv">
+    
+<h1>Daniel Duda</h1>
 
+
+    <div class="container">
+
+        <img src="images/2.jpg" alt="imagen de cv">
+        
+    <div class="lista">
     <h2><ins>Información personal:</ins></h2>
 
     <ul>
@@ -25,10 +31,15 @@
         <li>Profesión: Community manager en redes sociales</li>
 
     </ul>
+      </div>
+    </div>
+    
     <h2> <ins>Más sobre mí:</ins></h2> 
-    <p>Lorem ipsum, <strong>amet</strong> consectetur <i>elit</i>.Eum magnam vero maxime 
+    <p class="destacados"> Lorem ipsum, <strong>amet</strong> consectetur <i>elit</i>.Eum magnam vero maxime 
     laudantium ad optio perferendis iusto eius omnis laborum esse repellendus rerum in,
     quo quibusdam, corrupti quas saepe distinctio?</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Molestiae obcaecati voluptate cupiditate, deserunt suscipit consequuntur labore quis aliquam 
+    eum quidem optio <span class="destacados">itaque ducimus</span>  ad odio incidunt maiores. Temporibus, repudiandae!</p>
 
    <h2><ins>Top series favoritas:</ins></h2> 
     <ol>
@@ -46,77 +57,67 @@
 </ol>
 
 <h2><ins>Vías de contacto:</ins></h2>
-<p>Si quieres contactarme, puedes visitar el siguiente <a href="http://www.google.com" target="_blank">link</a>, o bien rellenar el formulario más abajo.
-</p>
-<br>
-
-    <form>
-     <p>
-        <label for="nombre">Nombre</label>
-        <input type="text" placeholder="Escribe tu nombre" maxlength="10" name="nombre" id="nombre"/>
-        
+<p class="destacados">Si quieres contactarme, puedes visitar el siguiente <a href="http://www.google.com" target="_blank" class="boton"> link</a> o bien rellenar el formulario más abajo.
     </p>
-<p> 
-    <label for="apellido">Apellido</label>
-    <input type="text" placeholder="Escribe tu apellido" maxlength="10" name="apellido" id="apellido"/>
-</p>
 
-<p>
+<br>
+
+<div class="estiloform">
+    <form>
+     <p class="cajas"> 
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre" maxlength="10" name="nombre" id="nombre"/>
+        
+
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Escribe tu apellido" maxlength="10" name="apellido" id="apellido"/>
+            
+            <br> <br>
+            <label for="Género"><ins>Género</ins> </label>&nbsp;&nbsp;&nbsp; &nbsp;<label>hombre</label>
+            <input type="radio" name="Género" id="Género" value="hombre"/>
+                                            <label>mujer</label>
+            <input type="radio" name="Género" id="Género" value="mujer"/>
+            <br><br>
+            <label for="correo">Email</label>
+            <input type="email" name="correo" id="correo" placeholder="Ingrese email">
+
+            <label for="token">Token</label>
+            <input type="password" name="token" id="token" placeholder="clave numérica" maxlength="4"/>
+            <br> <br>
+
+            <label><ins>Motivo de consulta</ins></label>
     
-    <label for="sexo">Sexo</label> <br>
-            <label>hombre</label>
-    <input type="radio" name="sexo" id="sexo" value="hombre"/>
-    
-             <label>mujer</label>
-    <input type="radio" name="sexo" id="sexo" value="mujer"/>
-    
-</p>
+            <br><br>
+        <label for="interview">Coordinar entrevista</label>
+        <input type="checkbox" name="motivo de la consulta[]" id="interview"/>
+       <br>
+        <label for="colaboración">Asociarse al proyecto </label>
+        <input type="checkbox" name="motivo de la consulta[]" id="colaboración"/>
+       
+        <br>
+        <label for="contratación">Contratación inmediata</label>
+        <input type="checkbox" name="motivo de la consulta[]" id="contratación"/>
+        <br><br>
+        <label>¿Ha sido útil la página web?</label>
+        <br>
+        <label for="respuestas">(ayúdenos a mejorar calificando)</label>
+        <select name="respuestas">
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+        <option value="No responder">No responder</option>
+        
+        </select>
+            <br><br>
+        <input type="submit" value="Enviar formulario"/>
+        <input type="reset" value="Borrar"/>
 
-<p>
-    <label for="correo">Email</label>
-    <input type="email" name="correo" id="correo" placeholder="Ingrese email">
-
-</p>
-
-<p>
-    <label for="token">Token</label>
-    <input type="password" name="token" id="token" placeholder="clave numérica" maxlength="4"/>
-
-</p>
-
-<p> 
-
-    <label>Motivo de consulta</label>
-<br>
-<br>
-    <label for="interview">Coordinar entrevista</label>
-    <input type="checkbox" name="motivo de la consulta[]" id="interview"/>
-   <br>
-    <label for="colaboración">Asociarse al proyecto </label>
-    <input type="checkbox" name="motivo de la consulta[]" id="colaboración"/>
-   
-    <br>
-    <label for="contratación">Contratación inmediata</label>
-    <input type="checkbox" name="motivo de la consulta[]" id="contratación"/>
-   
-<br>
-<br>
-<label>¿Ha sido útil la página web?</label>
-<br>
-<label for="respuestas">(ayúdenos a mejorar calificando)</label>
-<select name="respuestas">
-<option value="Sí">Sí</option>
-<option value="No">No</option>
-<option value="No responder">No responder</option>
-
-</select>
-
-</p>
-
-<input type="submit" value="Enviar formulario"/>
-<input type="reset" value="Borrar"/>
+    </p>
+        
 
 </form>
+</div>
+
+
 </body>
 
 
